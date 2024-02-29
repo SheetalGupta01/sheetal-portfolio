@@ -143,12 +143,13 @@ a {
 	gap: 2rem;
 }
 .portfolio-name {
-	color: white;
-	font-weight: 200;
-	font-size: clamp(2rem, 8vw, 4rem);
+	color: black;
+	font-weight: 400;
+	font-size: 3rem;
 	text-transform: uppercase;
 	display: block;
-	margin-bottom: -0.8rem;
+	margin-bottom: 0.8rem;
+	margin-top: 0.8rem;
 }
 .profile_name_lastName {
 	color: var(--primary-color);
