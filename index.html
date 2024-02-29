@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <!-- Desktop Navigation -->
+<nav id="desktop-nav">
+    <!-- Logo -->
+    <div class="logo">Sheetal</div>
+    <!-- Navigation Links -->
+    <div>
+        <ul class="nav-links">
+            <!-- About Link -->
+            <li><a href="#about">About</a></li>
+            <!--Skills-->
+            <li><a href="#skills">Skills</a></li>
+            <!-- Experience Link -->
+            <li><a href="#experience">Experience</a></li>
+            <!-- Projects Link -->
+            <li><a href="#projects">Projects</a></li>
+            <!-- Contact Link -->
+            <li><a href="#conta" id="myButton">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<div id="myPopup" class="popup">
+  <div class="popup-content">
+          <h1 class="title">Get in Touch</h1>
+              <img
+                src="email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+              />
+              <a href="mailto:thesheetalgupta@gmail.com" style="align-items: center;">thesheetalgupta@gmail.com</a>
+              <br><img
+                src="linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+              />
+              <a href="https://www.linkedin.com/in/sheetalgupta15/">LinkedIn</a>
+           
+       
+      <button class="btn btn-color-2"  id="closePopup">
+            Close
+        </button>
+  </div>
+</div>
+<script>
+myButton.addEventListener("click", function () {
+    myPopup.classList.add("show");
+});
+closePopup.addEventListener("click", function () {
+    myPopup.classList.remove("show");
+});
+window.addEventListener("click", function (event) {
+    if (event.target == myPopup) {
+        myPopup.classList.remove("show");
+    }
+});
+</script>
+
+<!-- Mobile Navigation -->
+<nav id="hamburger-nav">
+    <!-- Logo -->
+    <div class="logo">Sheetal</div>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu">
+        <!-- Hamburger Icon -->
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Menu Links -->
+        <div class="menu-links">
+            <!-- About Link -->
+            <li><a href="#about"  onclick="toggleMenu()">About</a></li>
+            <!--Skills-->
+            <li><a href="#skills"  onclick="toggleMenu()">Skills</a></li>
+            <!-- Experience Link -->
+            <li><a href="#experience"  onclick="toggleMenu()">Experience</a></li>
+            <!-- Projects Link -->
+            <li><a href="#projects"  onclick="toggleMenu()">Projects</a></li>
+            <!-- Contact Link -->
+            <li><a href="#contact"  onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+<!-- Profile -->
+<section id="profile">
+    <div class="section__pic-container">
+        <img src="p1.jpeg" alt="Sheetal profile picture"/>
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+        <h1 class="title">Sheetal Gupta</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('Sheetal CV.pdf')">Download CV</button>
+            <button class="btn btn-color-1" onclick="location.href='https://sheetalgupta01.github.io/portfolio/#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+            <img src="linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/sheetalgupta15/'"/>
+            <img src="github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/SheetalGupta01'"/>
+        </div>
+    </div>
+</section>
+<!-- About Section -->
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1><br>
+    <div class="section-container">
+        <!--<div class="section__pic-container">
+            <img src="p1.jpeg" alt="profile picture" class="about-pic"/>
+        </div>-->
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="experience.png" alt="experience icon" class="icon"/>
+                    <h3>Experience</h3>
+                    <p>2 Internships <br> Fresher </p>
+                </div>
+                <div class="details-container">
+                    <img src="education.png" alt="education icon" class="icon"/>
+                    <h3>Education</h3>
+                    <p>B.E - Information Technology</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    Self-motivated, highly passionate and hardworking fresher looking for an opportunity to work in a challenging organization to utilize skills and knowledge to work for the growth of the organization as well as to enhance my knowledge about new and emerging technology in the IT sector.
+                </p><br><br>
+            </div>
+        </div>
+    </div>
+    <img src="arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#skills' "/>
+</section>
+<!--Skills Section-->
+<section id="skills">
+    <p class="section__text__p1">Explore My </p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Skills</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>C</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>C++</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Java</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>SQL</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>HTML</HTMl></h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Skills</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Python</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>AWS</h3>
+                            <p>Certified</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Docker</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Kubernetes</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Linux</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div><br><Br>
+    <img src="arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience' "/>
+</section><br><Br>
+<!--Experience-->
+<section id="experience">
+    <p class="section__text__p1">Here are some of my Internship Details</p>
+    <h1 class="title">Internships</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">
+            Toywala Ltd</h2>
+            <h3 class="experience-sub-title">Apr 2019 - Jun 2019 . 3mos</h3>
+            <h3 class="experience-sub-title">Mumbai, India</h3>
+            <h3 class="experience-sub-title"> Onsite</h3>
+            <h3 class="experience-sub-title">Skills</h3>
+            <div class="article-container">
+            <article>
+                <img src="checkmark.png" alt="experience icon" class="icon"/>
+                <div>
+                    <h3>Trello</h3>
+                </div>
+            </article>
+            <article>
+                <img src="checkmark.png" alt="experience icon" class="icon"/>
+                <div>
+                    <h3>JS</h3>
+                </div>
+            </article>
+            <article>
+                <img src="checkmark.png" alt="experience icon" class="icon"/>
+                <div>
+                    <h3>HTML</h3>
+                </div>
+            </article>
+            <article>
+                <img src="checkmark.png" alt="experience icon" class="icon"/>
+                <div>
+                    <h3>CSS</h3>
+                </div>
+            </article>
+            <article>
+                <img src="checkmark.png" alt="experience icon" class="icon"/>
+                <div>
+                    <h3>PHP</h3>
+                </div>
+            </article>
+            <article>
+                <img src="checkmark.png" alt="experience icon" class="icon"/>
+                <div>
+                    <h3>Github</h3>
+                </div>
+            </article>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.linkedin.com/company/toywala/'"
+            >
+               Toywala 
+            </button>
+            </div>
+           
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Prashika Ltd</h2>
+          <h3 class="experience-sub-title">Jan 2022 - Jun 2022 . 6mos</h3>
+            <h3 class="experience-sub-title">United Kingdom</h3>
+            <h3 class="experience-sub-title">Remote</h3>
+            <h3 class="experience-sub-title">Skills</h3>
+            <div class="article-container">
+            <article>
+                <img src="checkmark.png" alt="experience icon" class="icon"/>
+                <div>
+                    <h3>AWS</h3>
+                </div>
+            </article>
+            <article>
+                <img src="checkmark.png" alt="experience icon" class="icon"/>
+                <div>
+                    <h3>Python</h3>
+                </div>
+            </article>
+            <article>
+                <img src="checkmark.png" alt="experience icon" class="icon"/>
+                <div>
+                    <h3>Jira</h3>
+                </div>
+            </article>
+            <article>
+                <img src="checkmark.png" alt="experience icon" class="icon"/>
+                <div>
+                    <h3>Linux</h3>
+                </div>
+            </article>
+            <article>
+                <img src="checkmark.png" alt="experience icon" class="icon"/>
+                <div>
+                    <h3>Docker</h3>
+                </div>
+            </article>
+            <article>
+                <img src="checkmark.png" alt="experience icon" class="icon"/>
+                <div>
+                    <h3>Kubernetes</h3>
+                </div>
+            </article>
+        
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.linkedin.com/company/prashika-limited/'"
+            >
+              Prashika
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+    <img src="arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects' "/>
+</section>
+<br><Br>
+<!--PROJECTS-->
+<section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="movie.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Movie Recommender System</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/SheetalGupta01/movie_recommender.git'"
+            >
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="car.png"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Car Rental Website Using PHP & My SQL</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/SheetalGupta01/car-rental-website.git'"
+            >
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="vatsalya.png"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Web Portal for a Orphanage Trust - Vatsalya</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/SheetalGupta01/vatsalya_website.git'"
+            >
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+  </section>
+  <!--CONTACT-->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:thesheetalgupta@gmail.com">thesheetalgupta@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com/in/sheetalgupta15/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <!--FOOTER-->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024. All Rights Reserved.</p>
+  </footer>
+  
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>
